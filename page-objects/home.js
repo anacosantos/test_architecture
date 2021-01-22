@@ -1,7 +1,13 @@
 const TagsComponent = require('./components/tags')
 
-export class Home {
-    construtor(){
-        this.tags = new TagsComponent()
+class Home {
+    constructor(){
+        this.tagsComponent = new TagsComponent()
+    }
+
+    visit() {
+        browser.get('https://lit-chamber-61567.herokuapp.com/')
     }
 }
+
+module.exports = Home
