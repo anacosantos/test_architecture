@@ -20,7 +20,8 @@ describe('Given I\'m at the home page', () =>{
   describe('And there are images', ()=>{
     it('Then it render the imagecards', ()=>{
       helper.waitForElementVisibility(destinationPage.destinationcardelement)
-      expect(destinationPage.destinationcardelement.getText()).toBe('4557874f-c04d-4ded-8dd8-580a41011777')
+      
+      expect(destinationPage.destinationcardelement.getText()).toBe('f9091cd6-b3d3-4d7b-b8e7-8b1927a5ea27')
     })
   })
 })
