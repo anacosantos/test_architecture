@@ -13,16 +13,16 @@ describe('Given I\'m at the home page', () =>{
 
   describe('And there are five tags in the database', ()=>{
     it('Then they all render as cards', ()=>{
-     helper.waitForElementVisibility(homepage.tagsComponent.cardElementHtml.last())
+     helper.waitForElementVisibility(homepage.tagsComponent.cards.last())
      
-     expect(homepage.tagsComponent.cardElementHtml.count()).toBe(5)
+     expect(homepage.tagsComponent.cards.count()).toBe(5)
       })
 
     describe('When I look to the first card in isolation', ()=>{
       it('Then I see an image, a heading, and an anchor',()=>{
-       helper.waitForElementVisibility(homepage.tags.imageOfFirstCard)
-       helper.waitForElementVisibility(homepage.tags.headingOfFirstCard)
-       helper.waitForElementVisibility(homepage.tags.anchorOfFirstCard)
+       helper.waitForElementVisibility(homepage.tagsComponent.imageOfFirstCard)
+       helper.waitForElementVisibility(homepage.tagsComponent.headingOfFirstCard)
+       helper.waitForElementVisibility(homepage.tagsComponent.anchorOfFirstCard)
       })
     })
   })
