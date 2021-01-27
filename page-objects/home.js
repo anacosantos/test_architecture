@@ -6,7 +6,7 @@ class Home {
     }
 
     visit() {
-        browser.get('https://lit-chamber-61567.herokuapp.com/')
+        browser.get('/')
     }
 }
 
