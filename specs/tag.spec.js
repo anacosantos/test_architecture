@@ -2,9 +2,11 @@ const ExpectedConditions = require('protractor')
 const helper = require('protractor-helper')
 const Tag = require('../page-objects/components/tag')
 const EC = protractor.ExpectedConditions
+const NovaDestinations = require('../page-objects/components/nvdestinations')
 
 describe('Given I\'m at a random tag page', () => {
   let tag
+  nvdestinations = new NovaDestinations()
 
   beforeAll(() => {
     tag = new Tag()
@@ -13,7 +15,7 @@ describe('Given I\'m at a random tag page', () => {
 
   describe('And there are three destinations for this tag in the database', () => {
     it('Then they all render as cards', () => {
-      tag.visit()
+      
       helper.waitForElementVisibility(tag.nvdestinations.cards.last())
       expect(tag.nvdestinations.cards.count()).toBe(3)
     })
