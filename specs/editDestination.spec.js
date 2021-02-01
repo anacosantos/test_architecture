@@ -12,5 +12,10 @@ describe('Given I\'m at a random edit destination page', ()=>{
 
   it('then I see an image, and a form to edit tha name and description', ()=>{
     helper.waitForElementVisibility(editDestination.self.image)
+    helper.waitForElementVisibility(editDestination.form.nameLabel)
+    helper.waitForElementVisibility(editDestination.form.nameInput)
+    helper.waitForElementVisibility(editDestination.form.descriptionLabel)
+    helper.waitForElementVisibility(editDestination.form.descriptionInput)
+    helper.waitForElementVisibility(editDestination.form.updateButton)
   })
 })
