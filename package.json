@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx standard",
-    "lint:fix":"npx standard --fix",
-    "pretest":"webdriver-manager update",
+    "lint:fix": "npx standard --fix",
+    "pretest": "webdriver-manager update",
     "test": "npm run test:chrome && npm run test:firefox",
     "test:chrome": "protractor configurations/chromeConfig.js",
     "test:firefox": "protractor configurations/firefoxConfig.js"
   },
   "standard": {
-    "globals":[
+    "globals": [
       "beforeAll",
       "beforeEach",
       "browser",
@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/wlsf82/curso-protractor-tat#readme",
   "devDependencies": {
+    "faker": "^5.2.0",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.1.9",
     "standard": "^16.0.3",

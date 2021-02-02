@@ -9,6 +9,7 @@
 // protector que nao usa angular usaremos onPrepare com função para dizer que não é aplic angular
 // o jasmineNodeOpts true: são testes independentes
 // webdriver-manager start
+// npm install faker --save-dev 
 
 module.exports = provideConfig => {
   const defaultConfig = {
