@@ -12,6 +12,7 @@ class EditDestination {
     visit () {
         browser.get(`destinations/${randomNumberBetweenOneAnd(15)}/edit`)
     }
+    
 }
 
 module.exports = EditDestination

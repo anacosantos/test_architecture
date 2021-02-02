@@ -18,4 +18,17 @@ describe('Given I\'m at a random edit destination page', ()=>{
     helper.waitForElementVisibility(editDestination.form.descriptionInput)
     helper.waitForElementVisibility(editDestination.form.updateButton)
   })
+
+  describe('When I submit the form with less than minimum require characteres ', ()=>{
+    beforeEach(()=>{
+      editDestination
+      .form
+      .submitFormAfterClearingAndFillingItWith('Ab', 'abcdefghi' )
+    })
+    
+    it('Then both fields are are wrapped in a .field_with_erros div', ()=>{
+      helper.waitForElementVisibility(editDestination.form.nameInputWithError)
+      helper.waitForElementVisibility(editDestination.form.descriptionInputWithError)
+    })
+  })
 })
