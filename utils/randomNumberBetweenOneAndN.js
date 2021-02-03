@@ -1,1 +1,1 @@
-module.exports = () => Math.floor(Math.random() * 5) + 1;
+module.exports = n => Math.floor(Math.random() * n) + 1;

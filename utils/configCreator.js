@@ -10,12 +10,14 @@
 // o jasmineNodeOpts true: são testes independentes
 // webdriver-manager start
 // npm install faker --save-dev 
+//const pagerSorter =  Math.floor(Math.random() * 4);//gera n° entre 0 e 3
+//.floor para arrendodar o numero
 
 module.exports = provideConfig => {
   const defaultConfig = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     baseUrl: 'https://lit-chamber-61567.herokuapp.com',
-    specs: ['../specs/*.spec.js'],
+    specs: ['../specs/header.spec.js'],
     onPrepare: () => {
       browser.waitForAngularEnabled(false)
     },

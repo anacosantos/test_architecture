@@ -1,13 +1,15 @@
 const { browser } = require('protractor')
 const NovaDestinations = require('./nvdestinations')
-const randomNumberBetweenOneandFive = require('../../utils/randomNumberBetweenOneAndN')
+const HeaderComponent = require('../components/header')
+const randomNumberBetweenOneAnd = require('../../utils/randomNumberBetweenOneAndN')
 class Tag {
   constructor () {
     this.nvdestinations = new NovaDestinations()
+    this.header = new HeaderComponent()
   }
 
   visit () {
-    browser.get(`/tags/${randomNumberBetweenOneandFive()}`)
+    browser.get(`/tags/${randomNumberBetweenOneAnd(5)}`)
   }
 }
 

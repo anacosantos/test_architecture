@@ -2,6 +2,7 @@ const faker = require('faker')
 const { browser } = require('protractor')
 const helper= require('protractor-helper')
 
+const Destinationeachcomp = require('../page-objects/components/destinationeachcomp')
 const EditDestination = require('../page-objects/editDestination')
 
 describe('Given I\'m at a random edit destination page', ()=>{
@@ -43,6 +44,26 @@ describe('Given I\'m at a random edit destination page', ()=>{
       browser.getCurrentUrl().then(url => {
         destinationUrl = url.replace('/edit' , '')
       })
+      
+      editDestination
+      .form
+      .submitFormAfterClearingAndFillingItWith(randomUuid, fiveRandomWords)
+    }) 
+
+    it('Then I\'m redirect to the destination view page,and I see the updated info', ()=>{
+      const destination = new Destinationeachcomp()
+
+      helper.waitForUrlToBeEqualToExpectedUrl(destinationUrl)
+      helper.waitForTextToBePresentInElement(
+        destination.heading,
+        randomUuid
+      )
+
+      helper.waitForTextToBePresentInElement(
+        destination.paragraph,
+        fiveRandomWords
+      )
+
     })
   })
 })
