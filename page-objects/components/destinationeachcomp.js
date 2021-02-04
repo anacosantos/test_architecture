@@ -1,13 +1,13 @@
-const { by } = require("protractor")
+const { by } = require('protractor')
 
 class Destinationeachcomp {
-    constructor(){
-        this.self = element(by.className('destination'))
-        this.image = this.self.element(by.css('img'))
-        this.heading =  this.self.element(by.css('h2'))
-        this.paragraph =  this.self.element(by.css('p'))
-        this.anchor =  this.self.element(by.css('a'))
-    }
+  constructor () {
+    this.self = element(by.className('destination'))
+    this.image = this.self.element(by.css('img'))
+    this.heading = this.self.element(by.css('h2'))
+    this.paragraph = this.self.element(by.css('p'))
+    this.anchor = this.self.element(by.css('a'))
+  }
 }
 
 module.exports = Destinationeachcomp

@@ -15,7 +15,6 @@ describe('Given I\'m at a random tag page', () => {
 
   describe('And there are three destinations for this tag in the database', () => {
     it('Then they all render as cards', () => {
-      
       helper.waitForElementVisibility(tag.nvdestinations.cards.last())
       expect(tag.nvdestinations.cards.count()).toBe(3)
     })

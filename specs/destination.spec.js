@@ -18,7 +18,7 @@ describe('Given I\'m at the home page', () => {
     it('Then it render the imagecards', () => {
       helper.waitForElementVisibility(destinationPage.destinationcardelement)
 
-      expect(destinationPage.destinationcardelement.getText()).toBe('3429c9bd-2810-4513-8c94-c95163222d85')
+      expect(destinationPage.destinationcardelement.getText()).toBe('330f900d-9f4d-4524-af83-8ec21912bb4b')
     })
   })
 })

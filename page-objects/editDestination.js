@@ -5,16 +5,15 @@ const Destinationeachcomp = require('../page-objects/components/destinationeachc
 const HeaderComponent = require('../page-objects/components/header')
 
 class EditDestination {
-    constructor(){
-       this.self = new Destinationeachcomp()
-       this.form = new Form()
-       this.header = new HeaderComponent()
-    }
+  constructor () {
+    this.self = new Destinationeachcomp()
+    this.form = new Form()
+    this.header = new HeaderComponent()
+  }
 
-    visit () {
-        browser.get(`destinations/${randomNumberBetweenOneAnd(15)}/edit`)
-    }
-    
+  visit () {
+    browser.get(`destinations/${randomNumberBetweenOneAnd(15)}/edit`)
+  }
 }
 
 module.exports = EditDestination
