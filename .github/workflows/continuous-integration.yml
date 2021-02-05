@@ -13,7 +13,7 @@ jobs:
       - name: Installation of dependecies
         run: npm ci
       - name: Lint
-        run: npm run lint
+        run: npm run lint --fix
       - name: E2E tests
         run: npm run pretest:github && npm tests
          
