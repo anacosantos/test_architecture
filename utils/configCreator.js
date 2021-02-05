@@ -24,7 +24,7 @@
 // e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
 module.exports = provideConfig => {
   const defaultConfig = {
-    //seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+    // seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
     baseUrl: 'https://lit-chamber-61567.herokuapp.com',
     specs: ['../specs/*.spec.js'],
     onPrepare: () => {
