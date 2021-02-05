@@ -24,13 +24,14 @@
 // e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
 module.exports = provideConfig => {
   const defaultConfig = {
-    // seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
     baseUrl: 'https://lit-chamber-61567.herokuapp.com',
     specs: ['../specs/*.spec.js'],
     onPrepare: () => {
       browser.waitForAngularEnabled(false)
     },
-    jasmineNodeOpts: { random: true }
+    jasmineNodeOpts: { random: true },
+    directConnect: true // nao precisa usar o selenium address
+    // seleniumAddress: 'http://127.0.0.1:4444/wd/hub'
   }
   // qd for executada a função vai receber e colocar dentro do objeto vazio:
   // os returns
