@@ -3,15 +3,13 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     steps:
       - name: Project checkout
         uses: actions/checkout@v1
       - name: Node.js setup
-        uses: actions/setup-node@v1.1.0
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        uses: actions/setup-node@v1.1.0
       - name: Installation of dependecies
         run: npm ci
       - name: Lint
