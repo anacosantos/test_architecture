@@ -12,6 +12,8 @@ jobs:
         uses: actions/setup-node@v1.1.0
       - name: Installation of dependecies
         run: npm ci
+      - name: NPX Standard
+        run: npx standard --fix
       - name: Lint
         run: npm run lint --fix
       - name: E2E tests
