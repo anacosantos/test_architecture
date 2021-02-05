@@ -12,16 +12,16 @@
 // npm install faker --save-dev
 // const pagerSorter =  Math.floor(Math.random() * 4);//gera n° entre 0 e 3
 // .floor para arrendodar o numero
-//fazer integração continua no github:trocar o "pretest": "webdriver-manager update",
-//"pretest:githu":"webdriver-manager update --versions.chrome",
-//passar versao especifica q esta disponivel no github actions - vitual-environments
-//github é a ferramenta de integração continua do github
-//https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md
-//avhar o chromedriver numeração
-//depois de criador os pretest, criar past mkdr github e github/workflows
-//dentro do workflows criar pasta .yml
-//no gitbash: git checkout -b ci, fazendo check no branch de CI
-//e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
+// fazer integração continua no github:trocar o "pretest": "webdriver-manager update",
+// "pretest:githu":"webdriver-manager update --versions.chrome",
+// passar versao especifica q esta disponivel no github actions - vitual-environments
+// github é a ferramenta de integração continua do github
+// https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md
+// avhar o chromedriver numeração
+// depois de criador os pretest, criar past mkdr github e github/workflows
+// dentro do workflows criar pasta .yml
+// no gitbash: git checkout -b ci, fazendo check no branch de CI
+// e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
 module.exports = provideConfig => {
   const defaultConfig = {
     seleniumAddress: 'http://localhost:4444/wd/hub',

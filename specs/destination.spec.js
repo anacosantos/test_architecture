@@ -1,6 +1,4 @@
-const ExpectedConditions = require('protractor')
 const helper = require('protractor-helper')
-const Home = require('../page-objects/home')
 const Destinations = require('../page-objects/components/destination')
 
 describe('Given I\'m at the home page', () => {

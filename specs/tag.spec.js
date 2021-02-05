@@ -1,13 +1,8 @@
-const ExpectedConditions = require('protractor')
 const helper = require('protractor-helper')
 const Tag = require('../page-objects/components/tag')
-const EC = protractor.ExpectedConditions
-const NovaDestinations = require('../page-objects/components/nvdestinations')
 
 describe('Given I\'m at a random tag page', () => {
   let tag
-  nvdestinations = new NovaDestinations()
-
   beforeAll(() => {
     tag = new Tag()
     tag.visit()

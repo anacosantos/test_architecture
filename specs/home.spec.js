@@ -1,4 +1,3 @@
-const ExpectedConditions = require('protractor')
 const helper = require('protractor-helper')
 const Home = require('../page-objects/home')
 

@@ -15,7 +15,6 @@ describe('Given I\'m at a random page of the app', () => {
   beforeEach(() => {
     randomPage = new pages[pagerSorter()]()
     randomPage.visit()
-    
   })
 
   it('Then I see an achor to the home in the header', () => {
