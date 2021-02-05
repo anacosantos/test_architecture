@@ -18,7 +18,10 @@
 //github é a ferramenta de integração continua do github
 //https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md
 //avhar o chromedriver numeração
-
+//depois de criador os pretest, criar past mkdr github e github/workflows
+//dentro do workflows criar pasta .yml
+//no gitbash: git checkout -b ci, fazendo check no branch de CI
+//e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
 module.exports = provideConfig => {
   const defaultConfig = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
