@@ -22,6 +22,10 @@
 // dentro do workflows criar pasta .yml
 // no gitbash: git checkout -b ci, fazendo check no branch de CI
 // e no branch add todos os files com: git add . e git commit -m 'First tester protractor course E2E tests'
+//tirar o main do package.json
+//add algumas coisas no keywords do pckg.json
+//nao esquecer de colocar o autor 
+//fazer um README
 module.exports = provideConfig => {
   const defaultConfig = {
     baseUrl: 'https://lit-chamber-61567.herokuapp.com',

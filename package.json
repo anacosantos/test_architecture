@@ -2,8 +2,7 @@
   "name": "curso-protractor-tat",
   "version": "1.0.0",
   "description": "Projeto para o curso de Protractor da Escola TAT",
-  "main": "index.js",
-  "scripts": {
+    "scripts": {
     "lint": "npx standard",
     "lint:fix": "npx standard --fix",
     "pretest:github": "webdriver-manager update --versions.chrome 88.0.4324.96",
@@ -28,7 +27,11 @@
     "type": "git",
     "url": "git+https://github.com/wlsf82/curso-protractor-tat.git"
   },
-  "keywords": [],
+  "keywords": [
+    "protractor",
+    "testing",
+    "e2e"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
